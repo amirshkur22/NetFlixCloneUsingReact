@@ -49,11 +49,11 @@ const Fotter = () => {
               <li>Contact Us</li>
             </ul>
           </div>
-              </div>
-              <div className="serviceCode"><p>Service Code</p></div>
-                  <div className="copyWrite">
-                      &copy; 1997-2024 Netflix, Inc.
-                  </div>
+        </div>
+        <div className="serviceCode">
+          <p>Service Code</p>
+        </div>
+        <div className="copyWrite">&copy; 1997-2024 Netflix, Inc.</div>
       </div>
     </div>
   );

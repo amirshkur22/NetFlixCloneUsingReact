@@ -28,11 +28,8 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    opacity: 0.5;
 }
-.headerInnerWrapper ul li a:hover{
-    opacity: 1;
-}
+
 .headerLeft ul,.headerRight ul{
 width: 150%;
 display: flex;
