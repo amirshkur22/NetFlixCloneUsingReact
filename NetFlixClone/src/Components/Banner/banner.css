@@ -2,7 +2,7 @@
     margin-top:-10vh;
     height:100vh;
     margin-bottom: -80px;
-    color: #fff;
+    color: white;
 	object-fit: contain;
 }
 .bannerContents {
@@ -42,7 +42,7 @@
 .bannerButton:hover {
 	color: #000;
 	background-color: #c6c6c6;
-	transition: all 0.2s ease;
+	transition: all0.2s;
 }
 .bannerFadeBottom {
 	height: 40vh;

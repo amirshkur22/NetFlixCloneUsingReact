@@ -8,7 +8,7 @@ const Banner = () => {
   useEffect(() => {
     async function dataFetch() {
       try {
-        const request = await Axios.get(fetchData.FetchTopRatedMovies);
+        const request = await Axios.get(fetchData.FetchRomanceMovies);
         console.log(request);
         const randomNumber = Math.random()
         const index = Math.round(randomNumber * request.data.results.length);
