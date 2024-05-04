@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import "./header.css";
-import netflix_Logo from "../../Images/NetflixLogo.png";
+import netflixLogo from "../../Images/NetflixLogo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
@@ -15,7 +15,7 @@ const Header = () => {
           <ul>
             <li>
               <a href="/">
-                <img src={netflix_Logo} alt="" width={150} />
+                <img src={netflixLogo} alt="" width={150} />
               </a>
             </li>
             <li>
