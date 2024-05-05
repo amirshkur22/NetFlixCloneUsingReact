@@ -1,14 +1,14 @@
 .banner{
     margin-top:-10vh;
     height:100vh;
-    margin-bottom: -80px;
+    /* margin-bottom: -80px; */
     color: white;
 	object-fit: contain;
 }
 .bannerContents {
 	margin-left: 30px;
 	padding-top: 300px;
-	height: 190px;
+	/* height: 190px; */
 }
 .bannerTitle {
 	font-size: 3rem;
