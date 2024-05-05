@@ -20,7 +20,7 @@
     "amir": "^0.0.1",
     "axios": "^1.6.8",
     "dotenv": "^16.4.5",
-    "movie-trailer": "^3.2.2",
+    "movie-trailer": "^3.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
@@ -35,7 +35,6 @@
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
-    "github-pages": "^3.0.2",
     "vite": "^5.2.0"
   }
 }

@@ -9,10 +9,8 @@ const Banner = () => {
     async function dataFetch() {
       try {
         const request = await Axios.get(fetchData.FetchRomanceMovies);
-        console.log(request);
         const randomNumber = Math.random()
-        const index = Math.round(randomNumber * request.data.results.length);
-        console.log(index)
+        const index = Math.floor(randomNumber * request.data.results.length);
         setMovie(request.data.results[index]);
       } catch (err) {
         console.log(err);

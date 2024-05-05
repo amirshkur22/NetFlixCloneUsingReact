@@ -1,3 +1,8 @@
+// Axios: a library for making HTTP requests
+// movieTrailer: a library for fetching movie trailers
+// YouTube: a library for rendering YouTube videos
+//URLSearchParams object allows us to work with the query string parameters of the URL, such as retrieving the value of a specific parameter or iterating over all the parameters.
+// split method is a string method in JavaScript that splits a string into an array of substrings, based on a specified delimiter
 import "./row.css";
 import { useEffect, useState } from "react";
 import Axios from "../../../utils/Axios";
@@ -22,19 +27,22 @@ const Row = (props) => {
     }
     fetchURLData();
   }, [fetchUrl]);
-  const handleClick = (movie) => {
+  const handleClick = async (movie) => {
     if (trailerUrl) {
       setTrailerUrl("");
-    } else {
-      movieTrailer(movie?.title || movie?.name || movie?.original_name).then(
-        (url) => {
-          // console.log(url);
-          const urlParams = new URLSearchParams(new URL(url).search);
-          // console.log(urlParams);
-          // console.log(urlParams.get("v"));
-          setTrailerUrl(urlParams.get("v"));
-        }
+      // console.log(trailerUrl)
+    }
+    try {
+      const url = await movieTrailer(
+        movie?.title || movie?.name || movie?.original_name
       );
+      const urlParts = url?.split("?");
+      const [key, value] = urlParts[1]?.split("=");
+      if (key === "v") {
+        setTrailerUrl(value);
+      }
+    } catch (error) {
+      console.error(error);
     }
   };
 
