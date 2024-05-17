@@ -36,7 +36,13 @@ const Row = (props) => {
       const url = await movieTrailer(
         movie?.title || movie?.name || movie?.original_name
       );
+      console.log(url);
+      if (!url) {
+        console.log("no trailer");
+        return;
+      }
       const urlParts = url?.split("?");
+
       const [key, value] = urlParts[1]?.split("=");
       if (key === "v") {
         setTrailerUrl(value);
